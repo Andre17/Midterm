@@ -25,7 +25,22 @@
 public class Grader {
   
   public static void main(String[] args) {
-    //TODO insert your code here
+  Scanner = new Scanner(System.in);
+System.out.println("Enter the number of points possible");
+   double totalpoints = scnr.nextDouble();
+   System.out.println("Enter the number of points missed");
+   double pointsmissed = scnr.nextDouble();
+   double mulNum = 0;
+   double divNum = 0;
+if (pointsmissed >= 0) {
+   divNum = pointsmissed / totalpoints;
+   mulNum = divNum * 100;
+   System.out.println("Your score is: "+ mulNum +".");
+   }
+   else {
+   System.out.println("Thank you");
+   }
+   
   }
   
   
