@@ -8,13 +8,28 @@
  * 
  * For guidance, refer to the flowchart PizzaPalace.pdf distributed with this file
  * 
- * @author <change to your name>
- * @version <today's date>
+ * @author <Andre Purits>
+ * @version <20/10/14>
  */
+ import java.util.Scanner;
 public class PizzaPalace {
 
 	public static void main(String[] args) {
-		// TODO Replace this section with your own code
+   Scanner scnr = new Scanner(System.in);
+   
+		System.out.println("Enter the number of people");
+      double people = scnr.nextDouble();
+      System.out.println("Number of slices for each person");
+      double slices = scnr.nextDouble();
+      System.out.println("Number of slices per pie");
+      double slicespie = scnr.nextDouble();
+      double mulNum = 0;
+      double divNum = 0;
+      mulNum = people * slices;
+      divNum = mulNum / slicespie;
+      System.out.println("You will need " +Math.ceil(divNum)+ "pizza's.");
+      
+      
 		
 		// NOTE
 		// The Math class provides a function, ceiling(), which will take a double
