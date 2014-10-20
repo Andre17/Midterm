@@ -21,7 +21,7 @@
 *  "Thank you -- have a great day!"
 *  
 */
-
+import java.util.Scanner;
 public class Grader {
   
   public static void main(String[] args) {
